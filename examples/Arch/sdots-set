@@ -1,0 +1,14 @@
+# x/xsessions/xinit.sh,                                         /usr/bin/xinit.sh
+# x/xsessions/myopenbox,                                        /usr/bin/myopenbox
+# x/xsessions/myi3,                                             /usr/bin/myi3
+# x/xsessions,                                                  /usr/share/xsessions
+etc/systemd/journald.conf,                                     /etc/systemd/journald.conf
+etc/systemd/my_suspend,                                        /usr/lib/systemd/system-sleep/power.sh 
+etc/locale.conf,                                               /etc/locale.conf
+etc/pacman.conf,                                               /etc/pacman.conf
+etc/pacman.d/mirrorlist,                                       /etc/pacman.d/mirrorlist
+etc/hosts,                                                     /etc/hosts
+usr/archlinux/git.sh,                                          /usr/share/makepkg/source/git.sh
+etc/pacman.d/clean-cache.hook,                                 /usr/share/libalpm/hooks/clean-cache.hook
+etc/pacman.d/pacdiff.hook,                                     /usr/share/libalpm/hooks/pacdiff.hook
+etc/tsocks.conf,                                               /etc/tsocks.conf

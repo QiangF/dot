@@ -1,8 +1,8 @@
 # vim: ft=sh
 # Local variables                                                           {{{
 # -----------------------------------------------------------------------------
-
-local clone_repository dotdir dotlink linkfiles home_pattern dotdir_pattern
+# dotdir dotlink is global
+local clone_repository linkfiles home_pattern dotdir_pattern
 local dotclone_shallow dotset_interactive dotset_verbose diffcmd edit2filecmd
 local dot_edit_default_editor columns hrule tp_bold tp_reset
 local dotpull_update_submodule
@@ -12,9 +12,7 @@ local dotpull_update_submodule
 # -----------------------------------------------------------------------------
 
 clone_repository="${DOT_REPO:-"https://github.com/ssh0/dotfiles.git"}"
-
-dotdir="${DOT_DIR:-"$HOME/.dotfiles"}"
-dotlink="${DOT_LINK:-"$dotdir/dotlink"}"
+# export clone_repository='https://github.com/username/dotfiles.git'
 linkfiles=("${dotlink}")
 
 home_pattern="s@$HOME/@@p"

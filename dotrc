@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+export dotdir="$HOME/.dotfiles"
+OS=$(lsb_release -si)
+# config script can used to conduct other actions like add lines to file
+config_scripts="$HOME/.dotfiles/$OS/config.sh"
+sconfig_scripts="$HOME/.dotfiles/$OS/sconfig.sh"
+alias dots='DOT_COMMAND=dots ~/.dotfiles/dot/dot.sh -s "$config_scripts"'
+alias sdots='sudo -E -s DOT_COMMAND=sdots ~/.dotfiles/dot/dot.sh -s "$sconfig_scripts"'

@@ -1,0 +1,8 @@
+# files below will be overwrite by the application
+# paste over the original file to reset config
+home/config/Code\ Industry/Master\ PDF\ Editor.conf,                  .config/Code\ Industry/Master\ PDF\ Editor.conf
+home/config/libreoffice/4/user/basic,                                .config/libreoffice/4/user/
+home/config/libreoffice/4/user/registrymodifications.xcu,            .config/libreoffice/4/user/registrymodifications.xcu
+home/config/fcitx5/config,                                           .config/fcitx5/config
+home/config/fcitx5/profile,                                          .config/fcitx5/profile
+home/config/fcitx5/conf/keyboard.conf,                               .config/fcitx5/conf/keyboard.conf

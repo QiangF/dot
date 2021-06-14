@@ -1,0 +1,28 @@
+* example setup
+1. environment variables are defined in: dotrc
+2. $dotdir/$OS contains rules for dotfile manipulation and config script
+3. dotfile manipulation rule file name pattern is "$DOT_COMMAND-$Operation"
+4. DOT_COMMAND can be dots or sdots
+* usage
+in your bashrc
+source ~/.dotfiles/dot/dotrc
+
+* dotlink example
+# https://github.com/ssh0/dotfiles/blob/master/dotlink
+# script ignore commented out line
+# and empty line
+# Format:
+# <dotfile>,<linkto>
+#
+# the script automatically add root directory to the file path.
+# So, you should write like below:
+myvimrc,.vimrc
+
+# Then the script will make the symbolic link from `$DOT_DIR/myvimrc` to `$HOME/.vimrc`.
+# The path start from slash "/" is correctly understood by the script:
+# when symbolic link path start with /, it treated as the true path, $HOME is not prepended.
+
+# And you can use environment variables in it.
+# It is useful when the file contains some private information and
+# you wouldn't upload it to your dotfiles repository.
+$HOME/Dropbox/briefcase/netrc,.netrc
